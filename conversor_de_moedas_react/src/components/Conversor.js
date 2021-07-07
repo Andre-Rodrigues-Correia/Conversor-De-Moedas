@@ -38,11 +38,17 @@ export default class Conversor extends Component {
         </h2>
         <input
           type="text"
+          className="texto"
           onChange={(event) => {
             this.setState({ moedaA_valor: event.target.value });
           }}
         ></input>
-        <input type="button" value="Converter" onClick={this.converter}></input>
+        <input
+          type="button"
+          className="botao"
+          value="Converter"
+          onClick={this.converter}
+        ></input>
         <h2>{this.state.moedaB_valor}</h2>
       </div>
     );
